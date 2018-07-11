@@ -30,10 +30,10 @@ const PostReducer =(state = initialState, action) =>{
     case "DELETE":
       state ={
         ...state,
-         posts:[...state.posts.splice(action.payload,1)]
-       //posts:state.posts.filter((post) =>post.id!==action.id)
+        //posts:[...state.posts.splice(action.payload,1)]
+      // posts:state.posts.filter((post) =>post.payload!==action.payload)
       }
-      //state.posts.splice(action.payload,1)
+      state.posts.splice(action.payload,1)
       break;
   }
     return state;

@@ -29,11 +29,11 @@ class PostDetails extends Component {
             Back to the Post
         </NavLink>
         <h1>Post Details Area</h1>
-				   {this.renderPost()}
 					 <NavLink exact to="/" onClick={()=> this.props.handleDelete(postId)} className="delete-button">
 										 Delete Posts
 					</NavLink>
 					{postId}
+					{this.renderPost()}
       </div>
     );
   }

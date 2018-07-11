@@ -16,7 +16,7 @@ import{
 
 class App extends Component {
   handleDelete = (postId) =>{
-    const payload = postId;
+  const payload = postId;
 	 // const payload = Number(this.props.match.params.postId);
 		this.props.dispatch({
 			type:'DELETE',
